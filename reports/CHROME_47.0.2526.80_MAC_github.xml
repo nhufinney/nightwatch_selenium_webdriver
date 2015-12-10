@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="1"
+            tests="1">
+
+  <testsuite name="github"
+    errors="2" failures="1" hostname="" id="" package="github" skipped="0"
+    tests="1" time="5.022" timestamp="Thu, 10 Dec 2015 23:26:36 GMT">
+  
+    <testcase name="Demo test GitHub" time="5.022" assertions="3">
+
+    
+
+      <failure message="Testing if element &lt;.container .breadcrumb a span&gt; is visible. Element could not be located.">    at Object.module.exports.Demo test GitHub (/Users/nfinney/Desktop/nightwatch/examples/tests/github.js:8:15)
+    at Module.call (/Users/nfinney/Desktop/nightwatch/lib/runner/module.js:63:34)
+    at /Users/nfinney/Desktop/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/Users/nfinney/Desktop/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/nfinney/Desktop/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/nfinney/Desktop/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/nfinney/Desktop/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/nfinney/Desktop/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/nfinney/Desktop/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:419:9)</failure>
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;.container .breadcrumb a span&quot; using: css selector
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>
