@@ -1,4 +1,4 @@
-// commands/compareScreenshot.js
+// Location: ./commands/compareScreenshot.js
 exports.command = function(filename, expected, callback) {
     var self = this,
         screenshotPath = 'test/screenshots/',

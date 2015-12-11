@@ -1,5 +1,5 @@
-// assertions/compareScreenshot.js
-var resemble = require('resemble'),
+// location: ./assertions/compareScreenshot.js
+var resemblejs = require('node-resemble-js'),
     fs = require('fs');
 
 exports.assertion = function(filename, expected) {
@@ -19,19 +19,28 @@ exports.assertion = function(filename, expected) {
             fs.writeFileSync(baselinePath, fs.readFileSync(resultPath));
         }
 
-        resemble
-        .resemble(baselinePath)
-        .compareTo(resultPath)
-        .ignoreAntialiasing()
-        .onComplete(callback);  // calls this.value with the result
+        resemblejs
+        .outputSettings({
+            errorColor: {
+                red: 225,
+                green: 0,
+                blue: 255
+            },
+            errorType: 'movement',
+            transparency: 0.1,
+            largeImageThreshold: 1200
+        });
+
+        resemblejs(baselinePath).compareTo(resultPath)
+        //.ignoreAntialiasing()
+        //.ignoreColors()
+        .onComplete(callback);
 
         return this;
     };
 
     this.value = function(result) {
-        var diff = new Buffer(result.getImageDataUrl().replace(/data:image\/png;base64,/,''), 'base64');
-        fs.writeFileSync(diffPath, diff);
-
+        result.getDiffImage().pack().pipe(fs.createWriteStream(diffPath));
         return parseFloat(result.misMatchPercentage, 10);  // value this.pass is called with
     };
 

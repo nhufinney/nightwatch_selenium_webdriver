@@ -44,6 +44,7 @@
     "mockery": "~1.4.0",
     "nightwatch-custom-commands-assertions": "^1.0.4",
     "nock": "~0.45.0",
+    "node-resemble-js": "0.0.4",
     "nodeunit": "latest"
   },
   "bin": {
