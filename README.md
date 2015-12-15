@@ -8,7 +8,7 @@ UI automated testing framework powered by [Node.js](http://nodejs.org/). It uses
 
 Run the test:
 
-(Make sure Java and Node.js are latest versions; web browsers such as Chrome and Firefox are alreay installed.)
+(Make sure Java and Node.js are latest versions; default web browser Firefox is alreay installed.)
 
 (Create framework testing similar to "nightwatch.json" and test script similar to "example_test.js")
 
@@ -16,12 +16,12 @@ Run the test:
 
 In terminal:
 
-	$ java -version
+	$ java -version 
 	
-	$ node -v
+	$ node -v 
 	
 	$ cd nightwatch/bin
 		
 Open a new terminal tab:
 
-	./bin/nightwatch -t example_test.js
+	./bin/nightwatch -t examples/tests/google.js
