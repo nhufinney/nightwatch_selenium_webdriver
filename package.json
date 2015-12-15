@@ -37,11 +37,13 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-jsonlint": "~1.0.4",
     "grunt-npm-release": "latest",
+    "imagemagick": "node_modules/imagemagick",
     "jscoverage": "latest",
     "jshint": "~2.4.4",
     "jsonlint": "~1.6.0",
     "mock-spawn": "^0.2.1",
     "mockery": "~1.4.0",
+    "nightwatch-custom-commands-assertions": "^1.0.4",
     "nock": "~0.45.0",
     "node-resemble-js": "0.0.4",
     "nodeunit": "latest"
