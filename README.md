@@ -10,7 +10,7 @@ Run the test:
 
 (Make sure Java and Node.js are latest versions; default web browser Firefox is alreay installed.)
 
-(Create framework testing similar to "nightwatch.json" and test script similar to "example_test.js")
+(Create custom framework testing similar to "nightwatch.json" and test script similar to "google.js". Otherwies, the default framework will be applied.)
 
 (In this repo, nightwatch automatically controls selenium so do not need to start selenium manually).
 
@@ -25,3 +25,5 @@ In terminal:
 Open a new terminal tab:
 
 	./bin/nightwatch -t examples/tests/google.js
+	
+After run the test command, see result in directory: ./test/
