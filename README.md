@@ -21,6 +21,8 @@ In terminal:
 	$ node -v 
 	
 	$ cd nightwatch/bin
+	
+	$ npm install
 		
 Open a new terminal tab:
 
